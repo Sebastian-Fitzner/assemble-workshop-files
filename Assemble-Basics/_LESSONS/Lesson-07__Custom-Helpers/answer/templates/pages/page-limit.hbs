@@ -1,0 +1,12 @@
+---
+title: Limit Output
+---
+
+<h3>Place your content here!</h3>
+
+{{#with article}}
+
+	{{#limit 0 3 data}}
+		{{> _article }}
+	{{/limit}}
+{{/with}}
