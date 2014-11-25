@@ -1,0 +1,11 @@
+---
+block: debug teaser
+---
+
+{{#with page--debug-teaser}}
+	<div class="teaser {{../page.teaser-classes}}">
+		<h2>{{teaser-headline}}</h2>
+		<div class="content">{{{teaser-content}}}</div>
+		<strong>{{../page.filename}}</strong>
+	</div>
+{{/with}}

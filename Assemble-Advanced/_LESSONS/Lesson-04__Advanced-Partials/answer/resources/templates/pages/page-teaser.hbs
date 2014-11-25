@@ -1,0 +1,24 @@
+---
+title: Page Teaser
+menuLink: Page Teaser
+sortOrder: 05
+teaser-classes: green
+---
+
+{{#extend "tpl-default"}}
+
+	{{#content "body"}}
+		Just some teaser infos.
+
+		{{#with page--teaser}}
+			{{partial "b-teaser"}}
+		{{/with}}
+		{{#with page--teaser}}
+			{{#parseJSON '{"teaser-classes": "yellow"}'}}
+				{{partial "b-teaser" ../this}}
+			{{/parseJSON}}
+		{{/with}}
+
+	{{/content}}
+
+{{/extend}}

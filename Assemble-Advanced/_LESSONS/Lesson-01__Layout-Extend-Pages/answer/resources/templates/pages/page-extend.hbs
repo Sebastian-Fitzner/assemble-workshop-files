@@ -1,0 +1,25 @@
+---
+title: Page Extenden
+menuLink: Page Eytend
+sortOrder: 02
+---
+
+{{#extend "tpl-default"}}
+
+	{{#content "logo"}}
+		{{> b-logo--inverted }}
+	{{/content}}
+
+	{{#content "logo" mode="append"}}
+		{{> b-search }}
+	{{/content}}
+
+	{{#content "body"}}
+		Just some page extend content.
+	{{/content}}
+
+	{{#content "footer" mode="prepend"}}
+		{{> b-footer-prepend }}
+	{{/content}}
+
+{{/extend}}

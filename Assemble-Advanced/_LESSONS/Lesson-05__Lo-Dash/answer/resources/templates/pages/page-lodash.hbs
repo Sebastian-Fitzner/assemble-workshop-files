@@ -1,0 +1,26 @@
+---
+title: Page Lo-Dash
+menuLink: Page Lo-Dash
+sortOrder: 06
+teaser-classes: green
+siteTitle: <%= config.siteTitle %>
+customPath: <%= config.customPath %>
+---
+
+{{#extend "tpl-default"}}
+
+	{{#content "body"}}
+		Just some Lo-Dash infos.
+
+		<ul>
+			<li>
+				{{ siteTitle }}
+			</li>
+			<li>
+				{{ customPath }}
+			</li>
+		</ul>
+
+	{{/content}}
+
+{{/extend}}
