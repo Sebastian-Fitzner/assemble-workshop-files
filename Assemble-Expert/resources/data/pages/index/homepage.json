@@ -1,0 +1,11 @@
+{
+	"data": [
+		{
+			"article-class": false,
+			"article-header": true,
+			"article-h1": "Build your website with Assemble",
+			"article-h2": "Use Assemble to give your projects a simple but scalable structure.",
+			"article-md": "resources/data/pages/index/homepage.md"
+		}
+	]
+}

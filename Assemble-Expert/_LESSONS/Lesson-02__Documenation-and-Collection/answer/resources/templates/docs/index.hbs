@@ -1,0 +1,23 @@
+---
+title: Docs
+menuLink: Doc Overview
+sortOrder: 00
+---
+
+{{#extend "tpl-default"}}
+	{{#content "body"}}
+		{{md "README.md"}}
+
+		{{#each section}}
+			<h3>{{section}}</h3>
+			<ul>
+				{{#withSort ../pages "data.title"}}
+					{{#is data.section ../section}}
+						<li><a href="{{autolink}}">{{data.title}}</a></li>
+					{{/is}}
+				{{/withSort}}
+			</ul>
+		{{/each}}
+
+	{{/content}}
+{{/extend}}
